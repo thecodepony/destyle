@@ -29,7 +29,7 @@ fn main() {
             .start(
                 "the_canvas_id", // hardcode it
                 web_options,
-                Box::new(|cc| Box::new(destyle::TemplateApp::new(cc))),
+                Box::new(|cc| Box::new(destyle::Application::new(cc))),
             )
             .await
             .expect("failed to start eframe");
